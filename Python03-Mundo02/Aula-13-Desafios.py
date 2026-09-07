@@ -78,3 +78,18 @@ for c in range(1, 7):
         cont += 1
 
 print(f"Você informou {cont} números PARES e a soma foi {soma}")
+
+#%%
+
+#Exercício Python 51: Desenvolva um programa que leia o primeiro termo e a razão de uma PA. No final, 
+#mostre os 10 primeiros termos dessa progressão.
+
+print("DESAFIO 051")
+
+primeiro = int(input("Primeiro termo: "))
+razao = int(input("Razão: "))
+decimo = primeiro + (10 - 1) * razao
+
+for c in range(primeiro, decimo + razao, razao):
+    print(f"{c}", end= " -> ")
+print("Acabou!")
